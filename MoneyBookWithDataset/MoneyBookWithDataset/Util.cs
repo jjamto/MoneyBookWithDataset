@@ -21,22 +21,7 @@ namespace MoneyBookWithDataset
         /// 디스크공간확인
         /// </summary>
         /// <remarks>남은 디스크의 공간을 확인 합니다</remarks>
-        public static double GetFreeSpace(string driveletter)
-        {
-            if (driveletter.StartsWith("\\") || driveletter.StartsWith("/")) return -1;
-            try
-            {
-                var di = new System.IO.DriveInfo(driveletter);
-                var freespace = di.TotalFreeSpace;
-                var totalspace = di.TotalSize;
-                var freeSpaceRate = (freespace * 1.0 / totalspace) * 100.0;
-                return freeSpaceRate;
-            }
-            catch (Exception ex)
-            {
-                return -1;
-            }
-        }
+        
 
         /// <summary>
         /// Today WorkWeek

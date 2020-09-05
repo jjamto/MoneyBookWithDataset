@@ -22,7 +22,7 @@ namespace MoneyBookWithDataset
             db = new DataSet1(); //database
 
             //loginDB
-            var file_dblogin = Util.CurrentPath + "Database\\login.xml";
+            var file_dblogin = Util.CurrentPath + "Database\\login.dat";
             if (System.IO.File.Exists(file_dblogin))
             {
                 db.Login.ReadXml(file_dblogin);

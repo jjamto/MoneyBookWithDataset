@@ -83,12 +83,6 @@
     <Compile Include="fMain.Designer.cs">
       <DependentUpon>fMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="fMon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fMon.Designer.cs">
-      <DependentUpon>fMon.cs</DependentUpon>
-    </Compile>
     <Compile Include="MethodExtensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -102,9 +96,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fMain.resx">
       <DependentUpon>fMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fMon.resx">
-      <DependentUpon>fMon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -598,6 +598,8 @@ namespace MoneyBookWithDataset {
             
             private global::System.Data.DataColumn columnRemark;
             
+            private global::System.Data.DataColumn columnLock;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public DataDataTable() {
@@ -681,6 +683,14 @@ namespace MoneyBookWithDataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn LockColumn {
+                get {
+                    return this.columnLock;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -716,7 +726,7 @@ namespace MoneyBookWithDataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataRow AddDataRow(System.DateTime PDate, string Grp, decimal Dr, decimal Cr, string Remark) {
+            public DataRow AddDataRow(System.DateTime PDate, string Grp, decimal Dr, decimal Cr, string Remark, bool Lock) {
                 DataRow rowDataRow = ((DataRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -724,7 +734,8 @@ namespace MoneyBookWithDataset {
                         Grp,
                         Dr,
                         Cr,
-                        Remark};
+                        Remark,
+                        Lock};
                 rowDataRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDataRow);
                 return rowDataRow;
@@ -760,6 +771,7 @@ namespace MoneyBookWithDataset {
                 this.columnDr = base.Columns["Dr"];
                 this.columnCr = base.Columns["Cr"];
                 this.columnRemark = base.Columns["Remark"];
+                this.columnLock = base.Columns["Lock"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -777,6 +789,8 @@ namespace MoneyBookWithDataset {
                 base.Columns.Add(this.columnCr);
                 this.columnRemark = new global::System.Data.DataColumn("Remark", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnRemark);
+                this.columnLock = new global::System.Data.DataColumn("Lock", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLock);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnIdx}, true));
                 this.columnIdx.AutoIncrement = true;
@@ -1069,6 +1083,22 @@ namespace MoneyBookWithDataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Lock {
+                get {
+                    if (this.IsLockNull()) {
+                        return false;
+                    }
+                    else {
+                        return ((bool)(this[this.tableData.LockColumn]));
+                    }
+                }
+                set {
+                    this[this.tableData.LockColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public bool IsPDateNull() {
                 return this.IsNull(this.tableData.PDateColumn);
             }
@@ -1125,6 +1155,18 @@ namespace MoneyBookWithDataset {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetRemarkNull() {
                 this[this.tableData.RemarkColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsLockNull() {
+                return this.IsNull(this.tableData.LockColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetLockNull() {
+                this[this.tableData.LockColumn] = global::System.Convert.DBNull;
             }
         }
         

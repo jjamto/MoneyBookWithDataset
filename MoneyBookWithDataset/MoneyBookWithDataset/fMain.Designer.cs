@@ -30,30 +30,30 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lbMon = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lbSumDr = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lbSumCr = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.파일ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.월선택ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.종료ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.마감ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.로그임ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.로그인ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataSet1 = new MoneyBookWithDataset.DataSet1();
             this.bs = new System.Windows.Forms.BindingSource(this.components);
             this.bn = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
@@ -62,7 +62,10 @@
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.dataBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.dataDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lbSumJan = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lbPreJan = new System.Windows.Forms.ToolStripStatusLabel();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -82,47 +85,25 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel4,
             this.lbMon,
-            this.toolStripStatusLabel1,
-            this.toolStripStatusLabel3,
             this.toolStripStatusLabel2,
-            this.toolStripStatusLabel5});
+            this.lbPreJan,
+            this.toolStripStatusLabel1,
+            this.lbSumDr,
+            this.toolStripStatusLabel3,
+            this.lbSumCr,
+            this.toolStripStatusLabel5,
+            this.lbSumJan});
             this.statusStrip1.Location = new System.Drawing.Point(0, 447);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(843, 22);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(43, 17);
-            this.toolStripStatusLabel1.Text = "입금합";
-            // 
-            // toolStripStatusLabel2
-            // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(43, 17);
-            this.toolStripStatusLabel2.Text = "출금합";
-            // 
-            // toolStripStatusLabel3
-            // 
-            this.toolStripStatusLabel3.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(16, 17);
-            this.toolStripStatusLabel3.Text = "0";
-            // 
             // toolStripStatusLabel4
             // 
             this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
             this.toolStripStatusLabel4.Size = new System.Drawing.Size(19, 17);
             this.toolStripStatusLabel4.Text = "월";
-            // 
-            // toolStripStatusLabel5
-            // 
-            this.toolStripStatusLabel5.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.toolStripStatusLabel5.Name = "toolStripStatusLabel5";
-            this.toolStripStatusLabel5.Size = new System.Drawing.Size(16, 17);
-            this.toolStripStatusLabel5.Text = "0";
             // 
             // lbMon
             // 
@@ -131,12 +112,38 @@
             this.lbMon.Size = new System.Drawing.Size(61, 17);
             this.lbMon.Text = "2020-09";
             // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(43, 17);
+            this.toolStripStatusLabel1.Text = "입금합";
+            // 
+            // lbSumDr
+            // 
+            this.lbSumDr.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lbSumDr.Name = "lbSumDr";
+            this.lbSumDr.Size = new System.Drawing.Size(16, 17);
+            this.lbSumDr.Text = "0";
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(55, 17);
+            this.toolStripStatusLabel2.Text = "이월잔액";
+            // 
+            // lbSumCr
+            // 
+            this.lbSumCr.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lbSumCr.Name = "lbSumCr";
+            this.lbSumCr.Size = new System.Drawing.Size(16, 17);
+            this.lbSumCr.Text = "0";
+            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.파일ToolStripMenuItem,
             this.마감ToolStripMenuItem,
-            this.로그임ToolStripMenuItem});
+            this.로그인ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(843, 24);
@@ -155,14 +162,14 @@
             // 월선택ToolStripMenuItem
             // 
             this.월선택ToolStripMenuItem.Name = "월선택ToolStripMenuItem";
-            this.월선택ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.월선택ToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.월선택ToolStripMenuItem.Text = "월 선택";
             this.월선택ToolStripMenuItem.Click += new System.EventHandler(this.월선택ToolStripMenuItem_Click);
             // 
             // 종료ToolStripMenuItem
             // 
             this.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem";
-            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.종료ToolStripMenuItem.Text = "종료";
             this.종료ToolStripMenuItem.Click += new System.EventHandler(this.종료ToolStripMenuItem_Click);
             // 
@@ -173,13 +180,13 @@
             this.마감ToolStripMenuItem.Text = "마감";
             this.마감ToolStripMenuItem.Click += new System.EventHandler(this.마감ToolStripMenuItem_Click);
             // 
-            // 로그임ToolStripMenuItem
+            // 로그인ToolStripMenuItem
             // 
-            this.로그임ToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.로그임ToolStripMenuItem.Name = "로그임ToolStripMenuItem";
-            this.로그임ToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
-            this.로그임ToolStripMenuItem.Text = "로그인";
-            this.로그임ToolStripMenuItem.Click += new System.EventHandler(this.로그임ToolStripMenuItem_Click);
+            this.로그인ToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.로그인ToolStripMenuItem.Name = "로그인ToolStripMenuItem";
+            this.로그인ToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.로그인ToolStripMenuItem.Text = "로그인";
+            this.로그인ToolStripMenuItem.Click += new System.EventHandler(this.로그임ToolStripMenuItem_Click);
             // 
             // dataSet1
             // 
@@ -190,6 +197,7 @@
             // 
             this.bs.DataMember = "Data";
             this.bs.DataSource = this.dataSet1;
+            this.bs.Sort = "PDate";
             // 
             // bn
             // 
@@ -221,6 +229,13 @@
             this.bn.Size = new System.Drawing.Size(843, 25);
             this.bn.TabIndex = 2;
             this.bn.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(27, 22);
+            this.bindingNavigatorCountItem.Text = "/{0}";
+            this.bindingNavigatorCountItem.ToolTipText = "전체 항목 수";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -255,16 +270,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "현재 위치";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(27, 22);
-            this.bindingNavigatorCountItem.Text = "/{0}";
-            this.bindingNavigatorCountItem.ToolTipText = "전체 항목 수";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -287,45 +295,42 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorAddNewItem
             // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "새로 추가";
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(67, 22);
+            this.bindingNavigatorAddNewItem.Text = "추가(&A)";
             this.bindingNavigatorAddNewItem.Click += new System.EventHandler(this.bindingNavigatorAddNewItem_Click);
             // 
             // bindingNavigatorDeleteItem
             // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "삭제";
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(68, 22);
+            this.bindingNavigatorDeleteItem.Text = "삭제(&D)";
             this.bindingNavigatorDeleteItem.Click += new System.EventHandler(this.bindingNavigatorDeleteItem_Click);
             // 
             // dataBindingNavigatorSaveItem
             // 
-            this.dataBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.dataBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("dataBindingNavigatorSaveItem.Image")));
             this.dataBindingNavigatorSaveItem.Name = "dataBindingNavigatorSaveItem";
-            this.dataBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.dataBindingNavigatorSaveItem.Text = "데이터 저장";
+            this.dataBindingNavigatorSaveItem.Size = new System.Drawing.Size(66, 22);
+            this.dataBindingNavigatorSaveItem.Text = "저장(&S)";
             this.dataBindingNavigatorSaveItem.Click += new System.EventHandler(this.dataBindingNavigatorSaveItem_Click);
             // 
             // dataDataGridView
             // 
             this.dataDataGridView.AllowUserToAddRows = false;
             this.dataDataGridView.AutoGenerateColumns = false;
+            this.dataDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
@@ -335,53 +340,89 @@
             this.dataDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataDataGridView.Location = new System.Drawing.Point(0, 24);
             this.dataDataGridView.Name = "dataDataGridView";
+            this.dataDataGridView.ReadOnly = true;
             this.dataDataGridView.RowTemplate.Height = 23;
+            this.dataDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataDataGridView.Size = new System.Drawing.Size(843, 398);
             this.dataDataGridView.TabIndex = 3;
+            this.dataDataGridView.DoubleClick += new System.EventHandler(this.dataDataGridView_DoubleClick);
             // 
-            // dataGridViewTextBoxColumn1
+            // toolStripStatusLabel3
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Idx";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Idx";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(43, 17);
+            this.toolStripStatusLabel3.Text = "출금합";
+            // 
+            // lbSumJan
+            // 
+            this.lbSumJan.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lbSumJan.Name = "lbSumJan";
+            this.lbSumJan.Size = new System.Drawing.Size(16, 17);
+            this.lbSumJan.Text = "0";
+            // 
+            // toolStripStatusLabel5
+            // 
+            this.toolStripStatusLabel5.Name = "toolStripStatusLabel5";
+            this.toolStripStatusLabel5.Size = new System.Drawing.Size(31, 17);
+            this.toolStripStatusLabel5.Text = "잔액";
+            // 
+            // lbPreJan
+            // 
+            this.lbPreJan.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lbPreJan.Name = "lbPreJan";
+            this.lbPreJan.Size = new System.Drawing.Size(16, 17);
+            this.lbPreJan.Text = "0";
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "PDate";
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.Format = "yy-MM-dd";
+            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewTextBoxColumn2.HeaderText = "날짜";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 54;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Grp";
             this.dataGridViewTextBoxColumn3.HeaderText = "구분";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 54;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Dr";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle11.Format = " N0";
-            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle8.Format = "C2";
+            dataGridViewCellStyle8.NullValue = null;
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewTextBoxColumn4.HeaderText = "입금액";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 66;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "Cr";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle12.Format = " N0";
-            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle9.Format = "C2";
+            dataGridViewCellStyle9.NullValue = null;
+            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridViewTextBoxColumn5.HeaderText = "출금액";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 66;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.DataPropertyName = "Remark";
             this.dataGridViewTextBoxColumn6.HeaderText = "비고";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Width = 54;
             // 
             // fMain
             // 
@@ -418,15 +459,15 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
         private System.Windows.Forms.ToolStripStatusLabel lbMon;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
+        private System.Windows.Forms.ToolStripStatusLabel lbSumDr;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel5;
+        private System.Windows.Forms.ToolStripStatusLabel lbSumCr;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 파일ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 월선택ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 종료ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 마감ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 로그임ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 로그인ToolStripMenuItem;
         private DataSet1 dataSet1;
         private System.Windows.Forms.BindingSource bs;
         private System.Windows.Forms.BindingNavigator bn;
@@ -443,7 +484,10 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton dataBindingNavigatorSaveItem;
         private System.Windows.Forms.DataGridView dataDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.ToolStripStatusLabel lbPreJan;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel5;
+        private System.Windows.Forms.ToolStripStatusLabel lbSumJan;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;

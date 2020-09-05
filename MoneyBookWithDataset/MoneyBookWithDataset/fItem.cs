@@ -15,6 +15,17 @@ namespace MoneyBookWithDataset
         public fItem(DataSet1.DataRow dr)
         {
             InitializeComponent();
+            this.bs.DataSource = dr;
+            if (dr.Lock)
+            {
+                //마감된 자료
+                this.panel1.Enabled = false;
+                this.button1.Enabled = false;
+            }
+        }
+        private void fItem_Load(object sender, EventArgs e)
+        {
+         
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -24,5 +35,6 @@ namespace MoneyBookWithDataset
             this.bs.EndEdit();
             DialogResult = DialogResult.OK;
         }
+
     }
 }
