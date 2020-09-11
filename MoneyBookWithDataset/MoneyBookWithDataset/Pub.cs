@@ -31,7 +31,7 @@ namespace MoneyBookWithDataset
             //기본ID설정
             if (db.Login.Rows.Count == 0)
             {
-                //admin 계정 생성
+                //admin 계정 생성 login
                 var newdr = db.Login.NewLoginRow();
                 newdr.ID = "admin";
                 newdr.PW = "1234";
